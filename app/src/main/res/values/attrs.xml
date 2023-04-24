@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomProfileImageView">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="progressPercent" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCircularProgressBar">
+        <attr name="circularProgress" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CustomStraightProgressBar">
+        <attr name="straightProgress" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CustomCircleImageView">
+        <attr name="cornerRadius1" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_task_card"
+    android:layout_marginBottom="@dimen/margin_card_medium_2"
+    android:background="@drawable/background_task_card"
+    android:paddingStart="@dimen/margin_medium_2"
+    android:paddingTop="@dimen/margin_medium_2">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStatus"
+        style="@style/robotoMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Progress"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_regular" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvType"
+        style="@style/robotoMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvStatus"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:text="#Design"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/text_regular" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPage"
+        style="@style/robotoBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStatus"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="Contact Page"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivMessage"
+        android:layout_width="@dimen/width_task_card_icons"
+        android:layout_height="@dimen/width_task_card_icons"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_medium_3"
+        android:tint="@color/colorSecondaryText"
+        app:srcCompat="@drawable/ic_baseline_message_white_24dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMessage"
+        style="@style/robotoBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivMessage"
+        android:layout_marginStart="@dimen/margin_card_medium"
+        android:layout_toEndOf="@id/ivMessage"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAttachment"
+        android:layout_width="@dimen/width_task_card_icons"
+        android:layout_height="@dimen/width_task_card_icons"
+        android:layout_alignTop="@id/ivMessage"
+        android:layout_marginStart="@dimen/margin_card_medium_2"
+        android:layout_toEndOf="@id/tvMessage"
+        android:tint="@color/colorSecondaryText"
+        app:srcCompat="@drawable/ic_baseline_attach_file_white_24dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAttachment"
+        style="@style/robotoBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivMessage"
+        android:layout_toEndOf="@id/ivAttachment"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/margin_card_medium"
+        android:layout_height="@dimen/margin_card_medium"
+        android:layout_alignTop="@id/tvMessage"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_toEndOf="@id/tvAttachment"
+        android:background="@drawable/dot_red" />
+
+    <com.example.module15_assignment.views.components.CustomProfileImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/margin_card_xlarge_2"
+        android:layout_height="@dimen/margin_card_xlarge_2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:elevation="@dimen/margin_medium"
+        app:cornerRadius="@dimen/corner_radius_task_card_profile"
+        app:srcCompat="@drawable/placeholder_profile" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNumber"
+        style="@style/robotoBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivMessage"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_toStartOf="@id/ivProfile"
+        android:text="N 163"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular" />
+
+</RelativeLayout>

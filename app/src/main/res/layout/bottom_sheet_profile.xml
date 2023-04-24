@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlFoodAndBeverageEdit"
+    style="?attr/bottomSheetStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:backgroundDimEnabled="true"
+    android:elevation="12dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnClose"
+        android:layout_width="@dimen/width_close_button"
+        android:layout_height="@dimen/width_close_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:background="@drawable/background_plus_circle_button"
+        android:padding="@dimen/margin_card_medium_2"
+        android:tint="@color/black"
+        app:srcCompat="@drawable/ic_baseline_close_white_24dp" />
+
+    <include
+        android:id="@+id/vpUserInformation"
+        layout="@layout/view_pod_user_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_62" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vpUserInformation"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorCyan"
+        app:tabMinWidth="@dimen/width_profile_tab"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextAppearance="@style/profileTabTextAppearance"
+        app:tabTextColor="@color/colorSecondaryText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayoutProfile"
+        android:background="@color/colorPrimaryDark"
+        android:paddingStart="@dimen/margin_large"
+        android:paddingEnd="@dimen/margin_large">
+
+        <include
+            layout="@layout/view_pod_task_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

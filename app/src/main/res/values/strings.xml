@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Module15_Assignment</string>
+    <string name="label_omp_dashboard">OMP Dashboard</string>
+    <string name="label_in_progress">In progress</string>
+    <string name="lbl_create_additional_pages">Create additional \npages</string>
+    <string name="lbl_plus_sign">+</string>
+    <string name="lbl_data">Data</string>
+    <string name="lbl_tasks">Tasks</string>
+    <string name="lbl_a_create_new_task">A Create New Task</string>
+    <string name="btn_save">Save</string>
+    <string name="lbl_client">CLIENT</string>
+    <string name="lbl_project_name">PROJECT NAME</string>
+    <string name="lbl_project_duration">PROJECT DURATION</string>
+    <string name="lbl_assignee">ASSIGNEE</string>
+    <string name="lbl_category">CATEGORY</string>
+    <string name="lbl_category_design">Design</string>
+    <string name="lbl_category_frondend">Frondend</string>
+    <string name="lbl_category_backend">Backend</string>
+    <string name="lbl_description">Description</string>
+    <string name="lbl_attachments">ATTACHMENTS</string>
+    <string name="lbl_create_task">CREATE TASK</string>
+    <string name="lbl_show_in_days">Show in days</string>
+    <string name="lbl_closed_tasks">Closed tasks</string>
+    <string name="lbl_open_tasks">Open tasks</string>
+    <string name="btn_message">MESSAGE</string>
+</resources>
